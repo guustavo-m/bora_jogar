@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import ProtectedRoute from './components/ProtectedRoute';
+import Inicio from './pages/Inicio';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
@@ -13,7 +14,7 @@ export default function App() {
         <div className="min-h-screen bg-white">
             <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/" element={<Inicio />} />
                 <Route path="/partidas" element={<Home />} />
                 <Route path="/partidas/:id" element={<DetalhesPartida />} />
                 <Route path="/login" element={<Login />} />
